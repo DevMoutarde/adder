@@ -3,14 +3,18 @@
 /// # exemple
 ///
 /// ```
-/// use adder::ajouter_un;
+/// use adder::mathlib::ajouter_un;
 /// assert_eq!(ajouter_un(3), 4);
 /// ```
 ///
-pub fn ajouter_un(x: i32) -> i32
+pub mod mathlib
 {
-    x + 1
+    pub fn ajouter_un(x: i32) -> i32
+    {
+        x + 1
+    }
 }
+
 
 
 #[cfg(test)]
